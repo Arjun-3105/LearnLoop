@@ -1,0 +1,176 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+}
+
+.sectionHeader {
+  margin-bottom: var(--spacing-3);
+}
+
+.sectionTitle {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.inputCard {
+  background-color: var(--bg-surface-elevated);
+}
+
+.inputRow {
+  display: flex;
+  gap: var(--spacing-3);
+}
+
+.textInput {
+  flex: 1;
+  background-color: var(--bg-main);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  padding: 0 var(--spacing-3);
+  border-radius: var(--radius-md);
+  font-size: 14px;
+  outline: none;
+  font-family: inherit;
+  transition: border-color 0.15s ease;
+}
+
+.textInput:focus {
+  border-color: var(--accent-primary);
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--spacing-4);
+}
+
+/* Active Sessions list */
+.cardList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.sessionCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--spacing-4);
+}
+
+.sessionMeta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-1);
+  min-width: 100px;
+}
+
+.sessionTopic {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--accent-primary);
+  text-transform: uppercase;
+}
+
+.sessionDate {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.sessionContent {
+  flex: 1;
+}
+
+.sessionTitle {
+  font-size: 15px;
+  margin-bottom: var(--spacing-2);
+}
+
+.progressRow {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+}
+
+.progressBar {
+  flex: 1;
+  height: 6px;
+  background-color: var(--border-color);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background-color: var(--accent-success);
+  border-radius: var(--radius-sm);
+}
+
+.progressText {
+  font-size: 12px;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+/* Insights Column */
+.insightsCard {
+  background-color: var(--bg-surface-elevated);
+}
+
+.insightsHeader {
+  font-size: 14px;
+  margin-bottom: var(--spacing-4);
+}
+
+.weakList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.weakItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: var(--spacing-3);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.weakItem:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.weakInfo {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  font-size: 14px;
+}
+
+.weakIcon {
+  color: var(--accent-danger);
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .inputRow {
+    flex-direction: column;
+  }
+  .sessionCard {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .textInput {
+    padding: var(--spacing-3);
+  }
+}

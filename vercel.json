@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "src/app/api/ingest/route.ts": { "maxDuration": 60 },
+    "src/app/api/assignment/route.ts": { "maxDuration": 60 },
+    "src/app/api/concept-map/route.ts": { "maxDuration": 60 },
+    "src/app/api/flashcards/route.ts": { "maxDuration": 60 },
+    "src/app/api/assess-repo/route.ts": { "maxDuration": 60 },
+    "src/app/api/quiz/analyze/route.ts": { "maxDuration": 60 }
+  }
+}

@@ -1,0 +1,133 @@
+.workspaceCard {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.stateContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.headerRow {
+  margin-bottom: var(--spacing-3);
+}
+
+.stateTag {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent-primary);
+  font-weight: 700;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: var(--spacing-3);
+}
+
+.paragraph {
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.subtext {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-4);
+}
+
+.actionRow {
+  margin-top: auto;
+  padding-top: var(--spacing-4);
+}
+
+/* Input State */
+.textarea {
+  width: 100%;
+  background-color: var(--bg-main);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  padding: var(--spacing-3);
+  border-radius: var(--radius-md);
+  font-size: 15px;
+  font-family: inherit;
+  resize: none;
+  outline: none;
+  transition: border-color 0.15s ease;
+  margin-bottom: var(--spacing-4);
+}
+
+.textarea:focus {
+  border-color: var(--accent-primary);
+}
+
+.inputActions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Eval State */
+.evalBoxGood {
+  background-color: rgba(16, 185, 129, 0.1);
+  border: 1px solid var(--accent-success);
+  padding: var(--spacing-3);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--spacing-3);
+}
+
+.evalBoxGood h4 {
+  color: var(--accent-success);
+  margin-bottom: var(--spacing-1);
+}
+
+.evalBoxWeak {
+  background-color: rgba(239, 68, 68, 0.1);
+  border: 1px solid var(--accent-danger);
+  padding: var(--spacing-3);
+  border-radius: var(--radius-md);
+}
+
+.evalBoxWeak h4 {
+  color: var(--accent-danger);
+  margin-bottom: var(--spacing-1);
+}
+
+.evalBoxGood p, .evalBoxWeak p {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+/* Resources State */
+.resourceList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.resourceCard {
+  background-color: var(--bg-main);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.resourceMeta {
+  font-size: 12px;
+  color: var(--accent-primary);
+  font-weight: 500;
+}
+
+.resourceBtn {
+  align-self: flex-start;
+  margin-top: var(--spacing-2);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}

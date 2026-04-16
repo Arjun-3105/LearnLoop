@@ -1,0 +1,61 @@
+.sidebar {
+  width: 250px;
+  background-color: var(--bg-surface);
+  border-right: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-4) 0;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+  padding: 0 var(--spacing-4);
+  margin-bottom: var(--spacing-5);
+}
+
+.logoIcon {
+  width: 24px;
+  height: 24px;
+  background-color: var(--accent-primary);
+  color: #fff;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.logoText {
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: -0.01em;
+}
+
+.navGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-1);
+  padding: 0 var(--spacing-2);
+  flex: 1;
+}
+
+.navItem {
+  padding: var(--spacing-2) var(--spacing-3);
+  color: var(--text-secondary);
+  border-radius: var(--radius-md);
+  transition: background-color 0.15s ease, color 0.15s ease;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.navItem:hover {
+  background-color: var(--bg-surface-elevated);
+  color: var(--text-primary);
+}
+
+.bottomNav {
+  padding: 0 var(--spacing-2);
+}

@@ -1,0 +1,20 @@
+.card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.pad-none { padding: 0; }
+.pad-sm { padding: var(--spacing-2); }
+.pad-md { padding: var(--spacing-4); }
+.pad-lg { padding: var(--spacing-6); }
+
+.interactive {
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.interactive:hover {
+  border-color: var(--border-color-light);
+  background-color: var(--bg-surface-elevated);
+}
