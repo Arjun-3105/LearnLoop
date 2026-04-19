@@ -8,11 +8,6 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "i.ytimg.com" },
     ],
   },
-  experimental: {
-    turbopack: {
-      root: ".",
-    },
-  },
 };
 
 export default nextConfig;
