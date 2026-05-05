@@ -107,13 +107,6 @@ This project is licensed under the MIT License.
 
 ---
 
-## 🙋 Contact
-
-- **Author**: [Your Name](mailto:your@email.com)
-- **GitHub**: [https://github.com/yourusername/learnloop](https://github.com/yourusername/learnloop)
-
----
-
 ## 🏅 Badges
 
 ![Next.js](https://img.shields.io/badge/Next.js-16-blue)
